@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    border: solid black;
+}
+
+main {
+    border: pink solid;
+}
+header{
+    text-align: center;
+}
+
+#project-boxes {
+display: grid;
+grid-template-columns: 1fr 1fr;
+border: saddlebrown solid;
+justify-items: center;
+}
+
+.project {
+    border: solid blue;
+    width: 350px;
+    height: 500px;
+text-align: center;
+}
+
+.project-img {
+    max-height: 400px;
+    max-width: 320px;
+}
