@@ -308,28 +308,37 @@ padding: 20px;
 .outer{
   width: 100vw;
   height: 100vh;
+  perspective: 800px;
+  /* perspective-origin: 50%; */
+
 }
 
-.flip-page {
+.flip-page,
+.flip-back {
   transform: rotateX(180deg);
 }
 
-.page{
+.page {
   height: 100%;
   width: 100%;
   position: relative;
-  transition: transform  1500ms ease;
+  transition: transform  2000ms ease-in;
   transform-style: preserve-3d;
+  
 }
 
 .front,
-.back{
+.back,
+.side-1,
+.side-2{
   height: 100%;
   width: 100%;
   position: absolute;
   backface-visibility: hidden;
 }
 
-.back{
+.back,
+.side-2{
   transform: rotateX(180deg);
 }
+
