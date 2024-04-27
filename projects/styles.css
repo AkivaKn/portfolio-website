@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header{
+    text-align: center;
+    margin: 40px;
+    font-size: 1.7rem;
+}
+
+#project-boxes {
+color: brown;
+display: flex;
+justify-content: space-around;
+;
+}
+
+.project {
+    width: 400px;
+    height: 500px;
+text-align: center;
+background-color: bisque;
+padding: 20px;
+}
+
+
+a{
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover{
+    color: navy;
+}
