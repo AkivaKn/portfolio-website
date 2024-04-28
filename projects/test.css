@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  height: 500px;
+}
+
+.flip-one {
+  transform: rotateX(120deg);
+}
+
+.flip-two{
+    transform: rotateX(240deg);
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.bottom,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: aquamarine;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.bottom {
+  transform: rotateX(240deg);
+}
+
+.back {
+  transform: rotateX(120deg);
+}
